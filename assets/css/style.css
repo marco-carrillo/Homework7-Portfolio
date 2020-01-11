@@ -94,3 +94,9 @@ body{
     font-family: 'Kranky', cursive;
     font-weight: bolder;
 }
+
+.card{
+    align-items:center;
+    align-content:center;
+    text-align: center;
+}
