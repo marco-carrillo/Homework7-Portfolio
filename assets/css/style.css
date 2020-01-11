@@ -100,3 +100,9 @@ body{
     align-content:center;
     text-align: center;
 }
+
+.center{
+    align-items:center;
+    align-content:center;
+    text-align: center;
+}
