@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Required by Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!--Scripting for this page-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kranky&display=swap" rel="stylesheet">
+     <!-- JQuery confirm -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--My own script-->
+     <script src="assets/js/create_context.js"></script>
+</head>
+<body>
+
+    <div class="container">  <!--Main wrapper-->
+
+         <div id="logo" class="row">  <!--First row:  Cool logo with the MC-->
+            <img id="MClogo" src="assets/images/MClogo.png">
+         </div>  <!--end of first row-->
+
+            <div id="info" class="row">  <!-- Second row:  Phone and e-mail here-->
+            <div class="col-sm-1"></div> <!-- for formatting purposes only-->
+            <div id="phone" class="col-sm-4"><i class="fas fa-phone-square-alt"></i>(615) 306-4887</div> <!-- Phone-->
+            <div class="col-sm-2"></div> <!-- for formatting purposes only-->
+            <div id="email" class="col-sm-4"><i class="fas fa-envelope-open-text"></i>marco_carrillo@yahoo.com</div> <!-- Email address-->
+            <div class="col-sm-1"></div> <!-- for formatting purposes only-->
+         </div> <!-- end of second row-->
+
+
+         <div id="quote" class="row">
+             <div class="col-sm-12">
+                 <p>“Live as if you were to die tomorrow. Learn as if you were to live forever.”<span>– Mahatma Gandhi</span></p>
+             </div>
+         </div>
+
+
+         <div id="content" class="row">  <!--Third row:  Tabs with main portfolio content-->
+
+            <div class="col-sm-12">  <!--Single column for the tab-->
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <!--*******************************************************-->
+                    <!--Following code shows the first tab, the "about me" tab-->
+                    <!--*******************************************************-->
+
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row toprow">  <!-- single row for tab about me-->
+                            <div class="col-sm-3 my-auto align-self-center">
+                                <img id="MCpic" src="assets/images/MC.jpeg" alt="Marco picture">
+                            </div>
+                            <div class="col-sm-9">
+                                 <ul>
+                                     <li>My wife and I have been <span class="emph">married </span>for over 20 years, and together we have four wonderful kids: <span class="emph">Kayla, Christopher, Carol and Kelsey</span></li>
+                                     <li>We live in the subdivision of <span class="emph">Westerleigh</span> in Moseley, VA, one of the most family-oriented neighborhoods in the greater Richmond area</li>
+                                     <li>Top-notch schools attracted us.  Quality of life and wonderful <span class="emph">neighbors</span> keep us here</li>
+                                     <li>Engineer by training, got my <span class="emph">MBA</span> at the University of Chicago Booth School of Business.  My passion is to solve complex problems by breaking them down into simple, small, digestible and <span class="emph">addressable</span> issues</li>
+                                     <li>I believe you die when you stop <span class="emph">learning</span>.  Learning full stack development</li>
+                                 </ul>
+                            </div>
+                        </div>  <!-- single row for tab about me-->
+                    </div> <!--end of home-tab-->
+
+
+
+                    <!--********************************************************-->
+                    <!--Following code shows the first tab, the "portfolio" tab-->
+                    <!--********************************************************-->
+
+                    <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+                        <div class="row toprow">  <!--Firt row of portfolio-->
+
+                            <div class="col-sm-3">
+                                 <div class="card">
+                                        <img src="assets/images/password-generator.jpg" class="card-img-top" alt="Pwd Gen">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Random Password Generator</h5>
+                                            <a href="https://marco-carrillo.github.io/Homework3-Portfolio/" target="_blank" class="btn btn-primary">Let's see</a>
+                                        </div>
+                                    </div>                            
+                            </div>  <!--End of card for first project-->
+
+                            <div class="col-sm-3">
+                                <div class="card">
+                                       <img src="assets/images/quiz-generator.jpg" class="card-img-top" alt="Quiz Gen">
+                                       <div class="card-body">
+                                           <h5 class="card-title">Random Quiz Generator</h5>
+                                           <a href="https://marco-carrillo.github.io/Homework4-Portfolio/" target="_blank" class="btn btn-primary">Let's see</a>
+                                       </div>
+                                   </div>                            
+                           </div>  <!--End of card for second project-->
+
+                           <div class="col-sm-3">
+                                <div class="card">
+                                    <img src="assets/images/weekly-planner.png" class="card-img-top" alt="Weekly planner">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Weekly Planner</h5>
+                                        <a href=" https://marco-carrillo.github.io/Homework5-Portfolio/" target="_blank" class="btn btn-primary">Let's see</a>
+                                    </div>
+                                </div>                            
+                           </div>  <!--End of card for third project-->
+
+                           <div class="col-sm-3">
+                                <div class="card">
+                                       <img src="assets/images/weather-forecast.jpg" class="card-img-top" alt="Weather dashboard">
+                                       <div class="card-body">
+                                            <h5 class="card-title">Weather dashboard</h5>
+                                           <a href=" https://marco-carrillo.github.io/Homework6-Portfolio/" target="_blank" class="btn btn-primary">Let's see</a>
+                                       </div>
+                                </div>                            
+                           </div>  <!--End of card for fourthproject-->
+
+                        </div> <!-- End of first row for tab portfolio-tab-->
+
+                        <div class="row">  <!--second row-->
+                           <div class="col-sm-3">
+                                <div class="card">
+                                       <img src="assets/images/trading-app.jpg" class="card-img-top" alt="Trading app">
+                                       <div class="card-body">
+                                            <h5 class="card-title">Trading app</h5>
+                                           <a href="https://ravil822.github.io/Project_1/" target="_blank" class="btn btn-primary">Let's see</a>
+                                       </div>
+                                </div>                            
+                           </div>  <!--End of card for fifth project-->
+
+                        </div>  <!-- end of second row-->
+
+                    </div>  <!-- end of portfolio-tab-->
+ 
+
+
+                    <!--********************************************************-->
+                    <!--Following code shows the third tab, the "contact-me" tab-->
+                    <!--********************************************************-->
+
+                    <div class="tab-pane fade toprow" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <form class="container contact-me">  <!--Start of the input form-->
+
+                                <!--  Formatting the name address-->
+                                 <div class="form-group row">
+                                      <label for="contact-name" class="col-sm-2">Name</label>
+                                      <div class="col-sm-10">
+                                          <input type="text" class="form-control tab-content" id="contact-name">
+                                      </div>
+                                </div>
+                  
+                                 <!--  Formatting the e-mail address-->
+                                 <div class="form-group row">
+                                      <label for="contact-email" class="col-sm-2">Email address</label>
+                                      <div class="col-sm-10">
+                                           <input type="email" class="form-control tab-content" id="contact-email">
+                                      </div>
+                                 </div>
+                  
+                                 <!-- This one is for the message text that the user wants to send-->
+                                 <div class="form-group row">
+                                      <label for="contact-message" class="col-sm-2">Enter message</label>
+                                      <div class="col-sm-10">
+                                           <textarea class="form-control tab-content" id="contact-message" rows="4"></textarea>
+                                      </div>
+                                 </div>
+                  
+                                 <!-- Buttom to submit the information-->
+                                 <div class="container my-3 row">
+                                    <button type="submit" id="send-message" class="btn btn-info tab-content">Submit</button>
+                                </div>
+                            </form>     
+                    </div>  <!--End of third tab - contact me-->
+                </div> <!-- myTabContent ends here-->
+
+
+            </div>  <!--Single column for the tab-->
+         </div> <!--end of third row-->
+
+    </div>  <!--end of main wrapper-->
+
+
+</body>
+</html>

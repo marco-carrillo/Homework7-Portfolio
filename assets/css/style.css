@@ -1,0 +1,96 @@
+/* will start the style file */
+
+/*******************/
+/*  General area  */
+/*******************/
+
+body{
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+#logo{
+    margin-top:25px;
+}
+
+#MClogo {
+    width: 120px;
+    height: 100px;
+    margin-left: auto;
+    margin-right:auto;
+    width=50%;    
+}
+
+#info{
+    padding-bottom:10px;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+#phone{
+    text-align: right;
+    font-size:20px;
+}
+
+#email{
+    text-align:left;
+    font-size:20px;
+    align-items:center;
+}
+
+#quote{
+    font-size:30px;
+    text-align: center;
+    font-family: 'Devonshire', cursive;
+}
+
+/*****************/
+/*  Tab content  */
+/*****************/
+
+#content{
+    align-content: center;
+    align-items: center;
+    margin-top:20px;
+    font-size:20px;
+}
+
+#myTab{
+    margin-top:20px;
+    align-content: center;
+    align-items: center;
+}
+
+/*************************/
+/* About me tab content */
+/*************************/
+
+#MCpic{
+    width:200px;
+    border-radius: 80%;
+}
+
+.toprow {
+    margin-top:30px;
+}
+
+.tab-content {
+    font-family: 'Reenie Beanie', cursive;
+    font-size:30px;
+}
+
+
+.carousel-port {
+    align-items:center;
+    align-content: center;
+
+}
+
+.slide-pic{
+    width:800px;
+}
+
+.emph {
+    font-family: 'Kranky', cursive;
+    font-weight: bolder;
+}

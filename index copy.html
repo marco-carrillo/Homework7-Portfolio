@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Required by Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!--Scripting for this page-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Devonshire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+     <!--JR3DCarousel -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="jR3DCarousel-master/src/jR3DCarousel.js"></script> -->
+    <script src="https://cdn.rawgit.com/vinayakjadhav/jR3DCarousel/v1.0.0/dist/jR3DCarousel.min.js"></script>    <!--This program script-->
+    <script src="assets/js/create_context.js"></script>
+</head>
+<body>
+
+    <div class="container">  <!--Main wrapper-->
+
+         <div id="logo" class="row">  <!--First row:  Cool logo with the MC-->
+            <img id="MClogo" src="assets/images/MClogo.png">
+         </div>  <!--end of first row-->
+
+         <div id="info" class="row">  <!-- Second row:  Phone and e-mail here-->
+            <div class="col-sm-1"></div> <!-- for formatting purposes only-->
+            <div id="phone" class="col-sm-4"><i class="fas fa-phone-square-alt"></i>(615) 306-4887</div> <!-- Phone-->
+            <div class="col-sm-2"></div> <!-- for formatting purposes only-->
+            <div id="email" class="col-sm-4"><i class="fas fa-envelope-open-text"></i>marco_carrillo@yahoo.com</div> <!-- Email address-->
+            <div class="col-sm-1"></div> <!-- for formatting purposes only-->
+         </div> <!-- end of second row-->
+
+
+         <div id="quote" class="row">
+             <div class="col-sm-12">
+                 <p>“Live as if you were to die tomorrow. Learn as if you were to live forever.”<span>– Mahatma Gandhi</span></p>
+             </div>
+         </div>
+
+
+         <div id="content" class="row">  <!--Third row:  Tabs with main portfolio content-->
+
+            <div class="col-sm-12">  <!--Single column for the tab-->
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <!--******************************************************-->
+                    <!--Following code shows the first tab, the "about me" tab-->
+                    <!--******************************************************-->
+
+
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row toprow">  <!-- single row for tab about me-->
+                            <div class="col-sm-3 my-auto align-self-center">
+                                <img id="MCpic" src="assets/images/MC.jpeg" alt="Marco picture">
+                            </div>
+                            <div class="col-sm-9">
+                                 <ul>
+                                     <li>My wife and I have been married for over 20 years, and together we have four wonderful kids: Kayla, Christopher, Carol and Kelsey</li>
+                                     <li>We live in the subdivision of Westerleigh in Moseley, VA, one of the most family-oriented neighborhoods in the greater Richmond area</li>
+                                     <li>Top-notch schools attracted us.  Quality of life and wonderful neighbors keep us here</li>
+                                     <li>Engineer by training, got my MBA at the University of Chicago Booth School of Business.  My passion is to solve complex problems by breaking them down into simple, small, digestible and addressable issues</li>
+                                     <li>I believe you die when you stop learning.  Learning full stack development</li>
+                                 </ul>
+                            </div>
+                        </div>  <!-- single row for tab about me-->
+                    </div> <!--end of home-tab-->
+
+
+                    <!--********************************************************-->
+                    <!--Following code shows the second tab, the "portfolio" tab-->
+                    <!--********************************************************-->
+
+                    <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+                        <div class="row toprow">
+                            <div class="carousel-port">  <!--Will add slides in this container later on-->
+                            </div>  <!--carousel-port ends here-->
+                        </div> <!-- single row for tab portfolio-tab-->
+                    </div>  <!-- end of portfolio-tab-->
+ 
+                    <!--********************************************************-->
+                    <!--Following code shows the third tab, the "contact-me" tab-->
+                    <!--********************************************************-->
+
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    </div>
+                </div> <!-- myTabContent ends here-->
+
+
+            </div>  <!--Single column for the tab-->
+         </div> <!--end of third row-->
+
+    </div>  <!--end of main wrapper-->
+
+
+</body>
+</html>
