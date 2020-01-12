@@ -13,9 +13,13 @@ Font chosen is not as formal to project a carefree approach to life.
 
 Ghandi quote is prominent and visible at all times to provide the fundamental guiding principle about how I live my life.  Contact information is visible at all times so that it is handy if a direct contact is desired.
 
-## About me page
+## About me tab
 
 Provide information about where I live (geography), my family, my background, and overall what I like to do.
+
+## Links tab
+
+Provides links to my PDF resume, LinkedIn, Github, and other sites of interest.
 
 ## Portfolio tab
 
