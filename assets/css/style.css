@@ -4,6 +4,13 @@
 /*  General area  */
 /*******************/
 
+html {
+    zoom: 0.85;
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
 body{
     font-family: 'Sorts Mill Goudy', serif;
 }
@@ -115,19 +122,18 @@ body{
 }
 
 
-
 /* ***********************************************************/
 /*  Added for effects on the application portfolio buttons   */
 /* ***********************************************************/
 .event_btnm {
     background: transparent;
     text-align: center;
-    width: 100px;
+    width: 150px;
     font-family: "Cantata One", serif;
     color: #fff;
     line-height: 40px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 20px;
     z-index: 2;
     position: relative;
     letter-spacing: .42px;
@@ -146,6 +152,7 @@ body{
     height: 100%;
     z-index: -1;
     background-color: #b10400;
+    background-color:rgba(7, 7, 223, 0.801);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -166,6 +173,7 @@ body{
     -o-transition: all 0.3s;
     transition: all 0.3s;
     border: 1px solid #b10400;
+    border:1px solid rgba(7, 7, 223, 0.801);
     -webkit-transform: scale(1.2, 1.2);
     -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
@@ -173,6 +181,7 @@ body{
   
   .event_btnm:hover {
     color: #b10400;
+    color:rgba(7, 7, 223, 0.801);
   }
   
   .event_btnm:hover:before {

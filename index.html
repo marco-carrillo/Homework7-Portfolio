@@ -25,12 +25,13 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <!--My own script-->
      <script src="assets/js/create_context.js"></script>
+
 </head>
 <body>
 
-    <div class="container">  <!--Main wrapper-->
+    <!-- <div class="container">  Main wrapper -->
 
-         <div id="logo" class="row ">  <!--First row:  Cool logo with the MC-->
+         <div id="logo" class="row mt-0">  <!--First row:  Cool logo with the MC-->
             <img id="MClogo" src="assets/images/MClogo.png">
          </div>  <!--end of first row-->
 
@@ -63,6 +64,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="carrousel-tab" data-toggle="tab" href="#carrousel" role="tab" aria-controls="carrousel" aria-selected="false">Portfolio Carrousel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
@@ -208,7 +212,64 @@
 
                         </div> <!-- End of secondrow for tab portfolio-tab-->
                     </div>  <!-- end of portfolio-tab-->
- 
+
+                    <!--********************************************************-->
+                    <!--Following code shows the third tab, the "carrousel" tab-->
+                    <!--********************************************************-->
+                    <div class="tab-pane fade toprow" id="carrousel" role="tabpanel" aria-labelledby="carrousel-tab">
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <a href="https://marco-carrillo.github.io/Homework3-Portfolio/" target="_blank">
+                                        <img src="assets/images/password-generator.png" class="d-block w-50 mx-auto" alt="Password generator">
+                                    </a>
+                                </div>
+
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <a href="https://marco-carrillo.github.io/Homework6-Portfolio/" target="_blank">
+                                        <img src="assets/images/weather-forecast.png"class="d-block w-50 mx-auto" alt="...">
+                                    </a>
+                                </div>
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <a href="https://marco-carrillo.github.io/Homework5-Portfolio/" target="_blank">
+                                        <img src="assets/images/weekly-planner.png" class="d-block w-50 mx-auto" alt="...">
+                                    </a>
+                                </div>
+                                <!--Fourth slide-->
+                                <div class="carousel-item">
+                                    <a href="https://burger-express.herokuapp.com/" target="_blank">
+                                        <img src="assets/images/Eat-da-burger.png" class="d-block w-50 mx-auto" alt="...">
+                                    </a>
+                                </div>
+                                <!--Fifth slide-->
+                                <div class="carousel-item">
+                                    <a href="https://ravil822.github.io/Project_1/" target="_blank">
+                                        <img src="assets/images/trading-app.png" class="d-block w-50 mx-auto" alt="...">
+                                    </a>
+                                </div>
+                                <!--Sixth slide-->
+                                <div class="carousel-item">
+                                    <a href="https://valentino-restaurant.herokuapp.com/" target="_blank">
+                                        <img src="assets/images/valentinos.png" class="d-block w-50 mx-auto" alt="...">
+                                    </a>
+                                </div>
+                            </div>  <!-- carrousel inner-->
+                            <a class="carousel-control-prev text-primary" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span><i class="fa fa-arrow-circle-left fa-2x"></i></span>
+                            </a>
+
+                            <a class="carousel-control-next text-primary" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+                            </a>
+                        </div>  <!--carrousel example captions-->
+                    </div>  <!--End of third tab - carrousel -->    
+
                     <!--********************************************************-->
                     <!--Following code shows the third tab, the "contact-me" tab-->
                     <!--********************************************************-->
@@ -248,12 +309,14 @@
                     </div>  <!--End of third tab - contact me-->
                 </div> <!-- myTabContent ends here-->
 
-
             </div>  <!--Single column for the tab-->
          </div> <!--end of third row-->
 
-    </div>  <!--end of main wrapper-->
+    <!-- </div>  end of main wrapper -->
 
+    <script type="text/javascript">
+            $('.carousel').carousel({interval:2000})
+    </script>
 
 </body>
 </html>
