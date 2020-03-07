@@ -128,12 +128,12 @@ body{
 .event_btnm {
     background: transparent;
     text-align: center;
-    width: 150px;
+    width: 130px;
     font-family: "Cantata One", serif;
     color: #fff;
     line-height: 40px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 17x;
     z-index: 2;
     position: relative;
     letter-spacing: .42px;
